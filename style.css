@@ -1,0 +1,264 @@
+
+
+body{
+    background-image: url(./Files/Images/Fondo.png);
+    margin: 0;
+    padding: 0;
+}
+
+.BarraSuperior{
+    margin-top: 10px;
+    position:fixed;
+    top:0;
+    margin-left: 5px;
+    margin-right: 5px;
+    display:flex;
+    align-items: center;
+    background: #E01212;
+    width: calc(100% - 10px) ;
+    height: 55px;
+    padding: 0;
+    border-radius : 25px; 
+    margin-bottom: 30px;
+    z-index: 1000;
+}
+
+.Logo{
+    height: 45px;
+    width: 45px;
+     padding-left: 10px;
+     padding-top: 5px;
+    margin-left: 5px;
+    
+}
+
+.BotonBarraSuperior {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 80%;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: white;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+    margin-left: 25px;
+}
+
+.Contacto {
+    margin-left: auto;
+    margin-right: 25px;
+
+}
+.BotonBarraSuperior:hover {
+            background-color:#D95F5F;
+            
+}
+
+.BotonBarraSuperior p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-size: medium;
+    font-weight: bold;
+}
+
+h1{
+    margin-top: 90px;
+    font-weight: bolder;
+    color: black;
+    font-size: 75px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+h2{
+    font-weight: bolder;
+    color: black;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-top: 75px;
+}
+
+h3{
+    background-color: #E01212;
+    padding:5px;
+    border-radius: 25px;
+    margin-top: 50px;
+    color: white;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.ImagenPrincipalCarrusel {
+    width: 80%;           /* o el valor que prefieras */
+    max-width: 750px;     /* opcional, para limitar el tamaño */
+    height: 500px;        /* elige una altura fija adecuada */
+    margin: 20px auto 0 auto;
+    border-radius: 25px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;     /* opcional, para evitar parpadeos */
+}
+.ImagenPrincipal {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+    display: none;
+}
+
+
+
+.PlantelesOpciones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+.BotonPlanteles {
+    color: black;
+    padding: 10px 20px;
+    margin: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    font-weight: bold;
+}
+.PlantelesContenido{
+    display: flex;
+    margin-top: 20px;
+    background-color: #E8E8E8;
+    height: 500px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+    border-color: #BDBDBD;
+    border: 1px;
+}   
+.PlantelesFoto{
+    width: 60%;
+    height: 90%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 25px;
+    margin-right: 10px;
+    border-radius: 25px;
+    background-image: url(./Files/Images/PlantelMasculinoMayores.jpg);
+    background-size: cover;
+}
+.PlantelesLista ul{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    list-style-position: inside;
+    padding-left: 0;
+    margin-left: 0;
+    display: inline-block;
+    text-align: left;
+}
+.PlantelesLista ul li{
+    margin-bottom: 5px;
+}
+.PlantelesLista{
+    margin-left: 100px;
+    text-align: center;
+}
+
+.FixturesContenido{
+    display: block;
+    margin-top: 20px;
+    background-color: #E8E8E8;
+    height: 550px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+    border-color: #BDBDBD;
+    border: 1px;
+}
+.FixturesBarra{
+    text-align: center;;
+    width:100%;
+    height:25px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-around;
+    background-color: #E01212;
+    color: white;
+    padding: 10px 0;
+    border-radius: 15px 15px 0 0;
+}
+.textobarrafixtures{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: medium;
+    margin: 0;
+}
+.Partido{
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    
+    border-bottom: 1px solid #ccc;
+}
+
+
+
+.SeccionVideoDirecto{
+margin-top: 65px;
+width:100%;
+height:800px;
+background-color: transparent;
+display:flex;
+flex-direction: row;
+justify-content: space-between;
+gap:0;
+
+
+}
+.PartidosEnDirecto {
+    width: 800px;
+    min-height: 500px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1000; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto; 
+    padding: 20px;
+    border-radius: 15px;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
