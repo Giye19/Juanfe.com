@@ -22,18 +22,24 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
- // Carrusel de imagen principal
-    const carrusel = document.querySelector('.ImagenPrincipalCarrusel');
-    if (carrusel) {
-        const imagenes = carrusel.querySelectorAll('.ImagenPrincipal');
-        let actual = 0;
-        imagenes.forEach((img, i) => img.style.display = i === 0 ? 'block' : 'none');
-        setInterval(() => {
-            imagenes[actual].style.display = 'none';
-            actual = (actual + 1) % imagenes.length;
-            imagenes[actual].style.display = 'block';
-        }, 5000);
-    }
+
+
+
+const carrusel = document.querySelector('.carrusel');
+if (carrusel) {
+  const imagenes = carrusel.querySelectorAll('.ImagenCarrusel');
+  let actual = 0;
+
+  // mostrar solo la primera
+  imagenes[actual].classList.add("active");
+
+  setInterval(() => {
+    imagenes[actual].classList.remove("active");
+    actual = (actual + 1) % imagenes.length;
+    imagenes[actual].classList.add("active");
+  }, 5000);
+}
+
 
 
 
@@ -82,4 +88,29 @@ if (plantelesBtn && plantelesH2) {
             window.scrollTo({ top: y, behavior: 'smooth' });
         });
     }
+
+    // Lógica para cambiar de plantel
+const botonesPlanteles = document.querySelectorAll('.BotonPlanteles');
+const contenidosPlanteles = document.querySelectorAll('.PlantelesContenido');
+
+botonesPlanteles.forEach((boton, index) => {
+    boton.addEventListener('click', () => {
+        contenidosPlanteles.forEach(c => c.classList.remove('active'));
+        contenidosPlanteles[index].classList.add('active');
+    });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 });
