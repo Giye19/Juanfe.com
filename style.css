@@ -6,6 +6,11 @@ body{
     padding: 0;
     cursor: default;
 }
+a{
+    color:inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
 
 .BarraSuperior{
     margin-top: 10px;
