@@ -12,6 +12,21 @@ a{
     cursor: pointer;
 }
 
+.ImagenCarrusel{
+    width: 100%;           
+    max-width: 750px;     
+    height: 100%;        
+    
+    border-radius: 25px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;     
+}
+
+
+
 .BarraSuperior{
     margin-top: 10px;
     position:fixed;
@@ -40,7 +55,20 @@ a{
 
 
 .Seccion{
-    margin-bottom: 500px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+  justify-content: center; /* horizontal */
+  align-items: center;     /* vertical */
+  flex-direction: column;
+    /*max-height: device-height;
+      max-width: device-width; 
+      y hacer todo en % de seccion 
+      asi no se joden las proporciones en distintos dispositivos
+      HACERLO EN UNA BRANCH NUEVA!!!!!!
+      */ 
+    margin-bottom: 300px;
+    background-color:transparent;
 }
 
 .Logo{
@@ -57,7 +85,7 @@ a{
     align-items: center;
     padding-left: 10px;
     padding-right: 10px;
-    height: 80%;
+    height: 65%;
     margin-top: auto;
     margin-bottom: auto;
     color: white;
@@ -75,51 +103,63 @@ a{
     font-size: medium;
     font-weight: bold;
 }
-
+.SeccionNovedades{
+    width:100%;
+    height: 100%;
+}
 .NovedadesContenido{
     display: flex;
-    align-items: center;
+    flex-direction: column;
     margin-top: 20px;
     background-color: #E8E8E8;
-    height: 650px;
+    height: 80%;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 120px;
     border-radius: 30px;
     border-color: #BDBDBD;
     border: 1px solid #BDBDBD;
 }
-.titulonovedades{
-    font-family: 'Times New Roman' Times, serif;
-    margin-top: 0;
+.NovedadesBarraTitulo{
     width: 100%;
-    height: 60px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: xx-large;
-    color: white;
-    text-align: center;
+    height: 10%;
     background-color: #E01212;
     border-radius: 30px 30px 0 0;
-    margin-bottom: 20px;
-    line-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:0;
+    margin-bottom: 0;
+}
+.NovedadesFotoYTexto{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 90%;
+    margin-top: 0;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
 }
 .textonovedades{
-    width: 40%;
-    height: 80%;
+    width: 35%;
+    margin-right: 5%;
+    margin-left: 2.5%;
+    height: 95%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: medium;
     color: black;
-    margin-right: 50px;
     text-align: center;
     line-height: 1.5;
     background-color: white;
     border-radius: 30px;
+    overflow-y: auto;
 }
-
 .carrusel{
-    width: 60%;
+    width: 50%;
     height: 80%; 
-    margin-left: 50px;
+    margin-left:5%;
     position: relative;
     overflow:hidden;
     border-radius: 30px;
@@ -132,9 +172,8 @@ a{
     opacity:0;
     transition: opacity 1s ease-in-out;
     object-fit: cover;
-   
-}
 
+}
 .carrusel img.active{
     opacity:1;
 }
@@ -159,45 +198,11 @@ h2{
     margin-top: 75px;
 }
 
-.PlantelesLista h3{
-    width: 100%;
-    box-sizing: border-box;
-    background-color: #E01212;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-radius: 25px;
-    margin-top:50px;
-    color: white;
-    font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-.PlantelesLista li{
-    border-radius: 30px;
-    padding: 2px;;
-}
 
 
-.ImagenCarrusel {
-    width: 100%;           /* o el valor que prefieras */
-    max-width: 750px;     /* opcional, para limitar el tamaño */
-    height: 100%;        /* elige una altura fija adecuada */
-    
-    border-radius: 25px;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #fff;     /* opcional, para evitar parpadeos */
-}
-.ImagenPrincipal {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 25px;
-    display: none;
-}
+
+
+
 
 
 
@@ -205,13 +210,11 @@ h2{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 20px;
+    
 }
 .BotonPlanteles {
-    
     color: black;
     padding: 10px 20px;
-    margin: 15px;
     border-radius: 15px;
     cursor: pointer;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -224,14 +227,23 @@ h2{
     background-color: #E01212;
     color: white;
 }
+.SeccionPlanteles{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
 .PlantelesContenido{
     display: flex;
-    margin-top: 20px;
+    margin-top: 0px;
     background-color: #E8E8E8;
-    height: 650px;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+    height: 70%;                             /*PROBLEMA ACA!!!, SECCIONDE BOTONES PLANTELES Y EL H3 EMPUJAN PLANTELESCONTENIDO*/
+    width: 70%;
+    margin-left: 0;
+    margin-right: 0;
     border-radius: 30px;
     border-color: #BDBDBD;
     border: 1px;
@@ -248,39 +260,77 @@ h2{
 }
 
 .PlantelesFoto{
+    background-color: white;
     width: 60%;
-    height: 90%;
+    height: 80%;
+    margin-left: 50px;
     margin-top: auto;
     margin-bottom: auto;
-    margin-left: 25px;
-    margin-right: 10px;
     border-radius: 25px;
     background-size: cover;
 }
-.PlantelesLista ul{
+.FotoDePlantel{
+    height: 100%;
     width:100%;
+    border-radius: 25px;
+
+}
+.PlantelesLista {
+    width:40%;
+    height: 100%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     list-style-position: inside;
-    padding-left: 0;
-    margin-left: 0;
-    display: inline-block;
-    text-align: left;
+    text-align: center;
+    align-items: center;
+    overflow:hidden;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 5% 0;
+}
+.PlantelesLista h3{
+    margin:auto;
+    width: 50%;
+    box-sizing: border-box;
+    background-color: #E01212;
+    padding: 1% 4%;
+    margin: 0 0 2% 0;
+    flex-shrink: 0;
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.PlantelesLista ul {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-y: auto;  /* si la lista es muy larga, aparece scroll */
 }
 .PlantelesLista ul li{
-    margin-bottom: 5px;
-}
-.PlantelesLista{
-    margin-left: 100px;
-    text-align: center;
+    margin-top:5px;
+    border-radius: 30px;
+    padding: 2px;;
 }
 
 
 
+.SeccionFixtures{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .FixturesContenido{
     display: block;
-    margin-top: 20px;
+    margin-top: 0;
     background-color: #E8E8E8;
-    height: 550px;
+    height: 70%;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
@@ -290,18 +340,18 @@ h2{
 }
 .FixturesBarra{
     text-align: center;
+    line-height: 1.5;
     width:100%;
-    height:25px;
+    height:5%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-content: space-around;
     background-color: #E01212;
     color: white;
     padding: 10px 0;
-    border-radius: 15px 15px 0 0;
+    border-radius: 30px 30px 0 0;
 }
 .textobarrafixtures{
-    
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     font-size: medium;
@@ -310,12 +360,11 @@ h2{
 .Partido{
     text-align: center;
     width: 100%;
-    height: 50px;
+    height: 10%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-content: space-between;
     align-items: center;
-    
     border-bottom: 1px solid #ccc;
 }
 .PartidoPlantel {
@@ -326,20 +375,20 @@ h2{
 
 
 .SeccionVideoDirecto{
-margin-top: 65px;
+
 width:100%;
-height:1000px;
+height:100%;
 background-color: transparent;
 display:flex;
 flex-direction: row;
 justify-content: space-between;
 gap:0;
-
-
 }
+
+
 .PartidosEnDirecto {
-    width: 800px;
-    min-height: 500px;
+    width: 80%;
+    height: 70%;
     margin: 20px auto;
     text-align: center;
 }
