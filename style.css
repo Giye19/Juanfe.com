@@ -118,8 +118,8 @@ a{
     margin-right: auto;
     margin-top: 120px;
     border-radius: 30px;
-    border-color: #BDBDBD;
-    border: 1px solid #BDBDBD;
+    border-color: transparent;
+    border: 1px solid transparent;
 }
 .NovedadesBarraTitulo{
     width: 100%;
@@ -148,7 +148,7 @@ a{
     margin-left: 2.5%;
     height: 95%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: medium;
+    font-size: small;
     color: black;
     text-align: center;
     line-height: 1.5;
