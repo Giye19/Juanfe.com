@@ -56,7 +56,7 @@ a{
 
 .Seccion{
     width: 100vw;
-    height: 100vh;
+    aspect-ratio: 16/8;
     display: flex;
   justify-content: center; /* horizontal */
   align-items: center;     /* vertical */
