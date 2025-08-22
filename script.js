@@ -3,25 +3,25 @@ document.addEventListener('DOMContentLoaded', function() {
     const modal = document.getElementById('contactModal');
     const closeBtn = document.querySelector('.modal .close');
     const contactoBtn = document.querySelector('.BotonBarraSuperior.Contacto');
-
     if(contactoBtn) {
         contactoBtn.addEventListener('click', function() {
             modal.style.display = 'block';
         });
     }
-
     if(closeBtn) {
         closeBtn.addEventListener('click', function() {
             modal.style.display = 'none';
         });
     }
-
     window.onclick = function(event) {
         if (event.target == modal) {
             modal.style.display = 'none';
         }
     }
 
+    if (/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+    alert("Esta página está hecha para ser vista en una computadora.\nAbrirla en un celular puede afectar las proporciones.");
+  }
 
 
 
