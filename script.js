@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
     alert("Esta página está hecha para ser vista en una computadora.\nAbrirla en un celular puede afectar las proporciones.");
-  }
+  } 
 
 
 
