@@ -13,22 +13,10 @@ a{
     cursor: pointer;
 }
 
-.ImagenCarrusel{
-    width: 100%;           
-    max-width: 750px;     
-    height: 100%;        
-    
-    border-radius: 25px;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #fff;     
-}
 
 
 .BarraSuperior{
-    margin-top: 10px;
+    margin-top: 0.8%;
     position:fixed;
     top:0;
     margin-left: 2.5%;
@@ -44,7 +32,6 @@ a{
     z-index: 1000;
     justify-content: space-between;
 }
-
 .BarraBotones{
     display:flex;
     flex:1;
@@ -52,31 +39,17 @@ a{
     align-items: center;
     gap:5%;
 }
-
-.Seccion{
-    width: 100vw;
-    aspect-ratio: 9/4;
-    display: flex;
-  justify-content: center; /* horizontal */
-  align-items: center;     /* vertical */
-  flex-direction: column;
-    margin-bottom: 5%;
-    background-color:transparent;
-}
-
 .Logo{
-    height: 45px;
-    width: 45px;
-     padding-left: 10px;
-     padding-top: 5px;
-    margin-left: 5px;
+    height: 75%;
+    aspect-ratio: 1/1;
+    padding:1%;
+    margin:1%;
 }
-
 .BotonBarraSuperior {
     display: flex;
     align-items: center;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 1%;
+    padding-right: 1%;
     height: 65%;
     margin-top: auto;
     margin-bottom: auto;
@@ -84,7 +57,6 @@ a{
     cursor: pointer;
     border-radius: 25px;
     transition: background-color 0.3s;
-    
 }
 .BotonBarraSuperior:hover {
             background-color:#D95F5F;
@@ -92,9 +64,23 @@ a{
 .BotonBarraSuperior p{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
-    font-size: medium;
+    font-size: auto;
     font-weight: bold;
 }
+
+
+.Seccion{
+    width: 100vw;
+    aspect-ratio: 2/1;
+    display: flex;
+    justify-content: center; /* horizontal */
+    align-items: center;     /* vertical */
+    flex-direction: column;
+    margin-bottom: 5%;
+    background-color:transparent;
+}
+
+
 .SeccionNovedades{
     width:100%;
     height: 100%;
@@ -139,7 +125,7 @@ a{
     margin-left: 2.5%;
     height: 95%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: small;
+    font-size: auto;
     color: black;
     text-align: center;
     line-height: 1.5;
@@ -168,7 +154,16 @@ a{
 .carrusel img.active{
     opacity:1;
 }
-
+.ImagenCarrusel{
+    width: 100%;               
+    height: 100%;        
+    border-radius: 25px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;     
+}
 
 
 h1{
