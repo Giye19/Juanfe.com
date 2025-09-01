@@ -6,6 +6,7 @@ body{
     padding: 0;
     cursor: default;
 }
+
 a{
     color:inherit;
     text-decoration: none;
@@ -24,7 +25,6 @@ a{
     align-items: center;
     background: #fff;     
 }
-
 
 
 .BarraSuperior{
@@ -53,10 +53,9 @@ a{
     gap:5%;
 }
 
-
 .Seccion{
     width: 100vw;
-    height: 100vh;
+    aspect-ratio: 9/4;
     display: flex;
   justify-content: center; /* horizontal */
   align-items: center;     /* vertical */
