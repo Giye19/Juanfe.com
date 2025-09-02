@@ -11,18 +11,21 @@ a{
     text-decoration: none;
     cursor: pointer;
 }
-
-.ImagenCarrusel{
-    width: 100%;           
-    max-width: 750px;     
-    height: 100%;        
-    
-    border-radius: 25px;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #fff;     
+h1{
+    margin-top: 90px;
+    font-weight: bolder;
+    color: black;
+    font-size: 75px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+h2{
+    font-weight: bolder;
+    color: black;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-top: 75px;
 }
 
 
@@ -44,7 +47,6 @@ a{
     z-index: 1000;
     justify-content: space-between;
 }
-
 .BarraBotones{
     display:flex;
     flex:1;
@@ -52,19 +54,6 @@ a{
     align-items: center;
     gap:5%;
 }
-
-
-.Seccion{
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-  justify-content: center; /* horizontal */
-  align-items: center;     /* vertical */
-  flex-direction: column;
-    margin-bottom: 5%;
-    background-color:transparent;
-}
-
 .Logo{
     height: 45px;
     width: 45px;
@@ -72,7 +61,6 @@ a{
      padding-top: 5px;
     margin-left: 5px;
 }
-
 .BotonBarraSuperior {
     display: flex;
     align-items: center;
@@ -96,6 +84,21 @@ a{
     font-size: medium;
     font-weight: bold;
 }
+
+
+.Seccion{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* horizontal */
+    align-items: center;     /* vertical */
+    flex-direction: column;
+    margin-bottom: 5%;
+    background-color:transparent;
+}
+
+
+
 .SeccionNovedades{
     width:100%;
     height: 100%;
@@ -169,30 +172,16 @@ a{
 .carrusel img.active{
     opacity:1;
 }
-
-
-
-h1{
-    margin-top: 90px;
-    font-weight: bolder;
-    color: black;
-    font-size: 75px;
-    font-family: 'Times New Roman', Times, serif;
-    text-align: center;
+.ImagenCarrusel{
+    width: 100%;              
+    height: 100%;        
+    border-radius: 25px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;     
 }
-
-h2{
-    font-weight: bolder;
-    color: black;
-    font-size: 50px;
-    font-family: 'Times New Roman', Times, serif;
-    text-align: center;
-    margin-top: 75px;
-}
-
-
-
-
 
 
 
@@ -202,7 +191,6 @@ h2{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
 }
 .BotonPlanteles {
     color: black;
@@ -232,8 +220,8 @@ h2{
     display: flex;
     margin-top: 0px;
     background-color: #E8E8E8;
-    height: 70%;                             /*PROBLEMA ACA!!!, SECCIONDE BOTONES PLANTELES Y EL H3 EMPUJAN PLANTELESCONTENIDO*/
-    width: 70%;
+    width: 80%;
+    aspect-ratio: 2/1;
     margin-left: 0;
     margin-right: 0;
     border-radius: 30px;
@@ -250,7 +238,6 @@ h2{
     opacity:1;
     position:relative;
 }
-
 .PlantelesFoto{
     background-color: white;
     width: 60%;
@@ -288,7 +275,7 @@ h2{
     background-color: #E01212;
     padding: 1% 4%;
     margin: 0 0 2% 0;
-    flex-shrink: 0;
+    
     border-radius: 25px;
     color: white;
     font-weight: bold;
@@ -367,7 +354,6 @@ h2{
 
 
 .SeccionVideoDirecto{
-
 width:100%;
 height:100%;
 background-color: transparent;
@@ -376,14 +362,13 @@ flex-direction: row;
 justify-content: space-between;
 gap:0;
 }
-
-
 .PartidosEnDirecto {
     width: 80%;
     height: 70%;
     margin: 20px auto;
     text-align: center;
 }
+
 
 .modal {
     display: none; 
@@ -396,7 +381,6 @@ gap:0;
     overflow: auto; 
     background-color: rgba(0,0,0,0.4); 
 }
-
 .modal-content {
     background-color: #fff;
     margin: 10% auto; 
@@ -406,9 +390,6 @@ gap:0;
     max-width: 400px;
     text-align: center;
 }
-
-
-
 .close {
     color: #aaa;
     float: right;
