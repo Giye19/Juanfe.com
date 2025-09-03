@@ -22,7 +22,7 @@ h1{
 h2{
     font-weight: bolder;
     color: black;
-    font-size: auto;
+    font-size: clamp(20px,2vw,30px);
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
 }
@@ -140,7 +140,7 @@ h2{
     margin-left: 2.5%;
     height: 95%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: clamp(2px,2vw,12px);
+    font-size: clamp(2px,2vw,15px);
     color: black;
     text-align: center;
     line-height: 1.5;
@@ -342,6 +342,7 @@ h2{
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #ccc;
+    font-size: clamp(10px,1.5vw,18px);
 }
 .Partido span{ 
     font-size: auto;
