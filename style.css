@@ -22,28 +22,22 @@ h1{
 h2{
     font-weight: bolder;
     color: black;
-    font-size: 50px;
+    font-size: auto;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
-    margin-top: 75px;
 }
-
-
-
 .BarraSuperior{
-    margin-top: 10px;
+    margin-left: 5vw;
+    margin-right: 5vw;
     position:fixed;
     top:0;
-    margin-left: 2.5%;
-    margin-right: 2.5%;
     display:flex;
     align-items: center;
     background: #E01212;
-    width: 95%;
-    height: 7.5%;
+    width: 90vw;
+    height: 7.5vh;
     padding: 0;
-    border-radius : 30px; 
-    margin-bottom: 5%;
+    border-radius : 25px; 
     z-index: 1000;
     justify-content: space-between;
 }
@@ -52,28 +46,27 @@ h2{
     flex:1;
     justify-content: center;
     align-items: center;
-    gap:5%;
+    gap:2.5%;
 }
 .Logo{
-    height: 45px;
-    width: 45px;
-     padding-left: 10px;
-     padding-top: 5px;
-    margin-left: 5px;
+    padding: 4px;
+    flex-shrink: 0;
+    margin-left: 1%;
+    height: 75%;
+    aspect-ratio: 1/1;
 }
 .BotonBarraSuperior {
+    font-size: clamp(3px,2vw,20px);
     display: flex;
     align-items: center;
-    padding-left: 10px;
-    padding-right: 10px;
-    height: 65%;
+    padding-left: 1%;
+    padding-right: 1%;
     margin-top: auto;
     margin-bottom: auto;
     color: white;
     cursor: pointer;
     border-radius: 25px;
     transition: background-color 0.3s;
-    
 }
 .BotonBarraSuperior:hover {
             background-color:#D95F5F;
@@ -81,14 +74,14 @@ h2{
 .BotonBarraSuperior p{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
-    font-size: medium;
+    font-size: auto;
     font-weight: bold;
 }
 
 
 .Seccion{
     width: 100vw;
-    height: 100vh;
+    aspect-ratio: 2/1;
     display: flex;
     justify-content: center; /* horizontal */
     align-items: center;     /* vertical */
@@ -96,7 +89,10 @@ h2{
     margin-bottom: 5%;
     background-color:transparent;
 }
-
+#SeccionFixtures{
+    width: 100%;
+    height: 80vh;
+}
 
 
 .SeccionNovedades{
@@ -115,6 +111,7 @@ h2{
     border-radius: 30px;
     border-color: transparent;
     border: 1px solid transparent;
+    position: relative;
 }
 .NovedadesBarraTitulo{
     width: 100%;
@@ -128,11 +125,11 @@ h2{
     margin-bottom: 0;
 }
 .NovedadesFotoYTexto{
+    margin-top: 0;
     display: flex;
     flex-direction: row;
     width: 100%;
     height: 90%;
-    margin-top: 0;
     justify-content: center;
     align-items: center;
     overflow:hidden;
@@ -143,7 +140,7 @@ h2{
     margin-left: 2.5%;
     height: 95%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: small;
+    font-size: clamp(2px,2vw,12px);
     color: black;
     text-align: center;
     line-height: 1.5;
@@ -173,7 +170,7 @@ h2{
     opacity:1;
 }
 .ImagenCarrusel{
-    width: 100%;              
+    width: 100%;               
     height: 100%;        
     border-radius: 25px;
     overflow: hidden;
@@ -182,8 +179,6 @@ h2{
     align-items: center;
     background: #fff;     
 }
-
-
 
 
 
@@ -198,7 +193,7 @@ h2{
     border-radius: 15px;
     cursor: pointer;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: medium;
+    font-size: clamp(4px,2vw,18px);
     font-weight: bold;
     border-radius: 25px;
     transition: background-color 0.3s;
@@ -220,14 +215,13 @@ h2{
     display: flex;
     margin-top: 0px;
     background-color: #E8E8E8;
+    height: 80%;                            
     width: 80%;
-    aspect-ratio: 2/1;
     margin-left: 0;
     margin-right: 0;
     border-radius: 30px;
     border-color: #BDBDBD;
     border: 1px;
-
     visibility:hidden;
     opacity:0;
     position:absolute;
@@ -242,7 +236,7 @@ h2{
     background-color: white;
     width: 60%;
     height: 80%;
-    margin-left: 50px;
+    margin-left: 5%;
     margin-top: auto;
     margin-bottom: auto;
     border-radius: 25px;
@@ -252,7 +246,6 @@ h2{
     height: 100%;
     width:100%;
     border-radius: 25px;
-
 }
 .PlantelesLista {
     width:40%;
@@ -275,11 +268,12 @@ h2{
     background-color: #E01212;
     padding: 1% 4%;
     margin: 0 0 2% 0;
-    
-    border-radius: 25px;
+    flex-shrink: 0;
+    border-radius: 15px;
     color: white;
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: clamp(2px,1.5vw,15px);
 }
 .PlantelesLista ul {
     width: 100%;
@@ -288,6 +282,7 @@ h2{
     padding: 0;
     box-sizing: border-box;
     overflow-y: auto;  /* si la lista es muy larga, aparece scroll */
+    font-size: clamp(2px,1.5vw,15px);
 }
 .PlantelesLista ul li{
     margin-top:5px;
@@ -306,7 +301,8 @@ h2{
     justify-content: center;
 }
 .FixturesContenido{
-    display: block;
+    display: grid;
+    grid-template-rows: auto repeat(8,1fr);
     margin-top: 0;
     background-color: #E8E8E8;
     height: 70%;
@@ -321,7 +317,7 @@ h2{
     text-align: center;
     line-height: 1.5;
     width:100%;
-    height:5%;
+    height:65%;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     justify-content: space-around;
@@ -337,14 +333,19 @@ h2{
     margin: 0;
 }
 .Partido{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
     text-align: center;
     width: 100%;
-    height: 10%;
+    height: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #ccc;
+}
+.Partido span{ 
+    font-size: auto;
+
 }
 .PartidoPlantel {
     font-weight: bold;
@@ -364,7 +365,7 @@ gap:0;
 }
 .PartidosEnDirecto {
     width: 80%;
-    height: 70%;
+    aspect-ratio: 9/6;
     margin: 20px auto;
     text-align: center;
 }

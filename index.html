@@ -12,7 +12,6 @@
 <body>
     <div class="BarraSuperior">
         <img class="Logo" src="./Files/Images/Logo.png">
-        
         <div class="BarraBotones">
             <div class="BotonBarraSuperior Inicio"><p>Inicio</p></div>
             <div class="BotonBarraSuperior Planteles"><p>Planteles</p></div>
@@ -20,10 +19,11 @@
             <div class="BotonBarraSuperior PartidosEnDirectoBoton"><p>Partidos en directo</p></div>
             <div class="BotonBarraSuperior Contacto"><p>Contacto</p></div>
         </div>
-    </div>   
-
-    <div class="Seccion">
-        <div class="SeccionNovedades" style="background-image: url(./Files/Images/faderojo.png); background-size: cover; background-position: center;">
+    </div> 
+      
+    <div class="Fade"  style="background-image: url(./Files/Images/faderojo.png); background-size:contain;">
+    <div class="Seccion PrimeraSeccion">
+        <div class="SeccionNovedades" >
             <div class="NovedadesContenido">
                 <div class="NovedadesBarraTitulo"><p style="color:white;font-weight: bold;font-size:larger;">NOVEDADES</p></div>
                 <div class="NovedadesFotoYTexto">
@@ -59,6 +59,7 @@ No queremos dejar de agradecer a:
             </div>
         </div>
     </div>
+    </div>
 
 
     <div class="Seccion">
@@ -72,7 +73,7 @@ No queremos dejar de agradecer a:
             </div>
 
 
-            <div class="PlantelesContenido MasculinoPrimera active">
+            <div class="PlantelesContenido MasculinoPrimera active" sty>
                 <div class="PlantelesFoto">
                     <img class="FotoDePlantel" src="./Files/Images/PlantelMasculinoMayores1.jpg">
                 </div>
@@ -188,7 +189,7 @@ No queremos dejar de agradecer a:
 
 
 
-<div class="Seccion">
+<div class="Seccion" id="SeccionFixtures">
     <div class="SeccionFixtures">
         <h2 id="fixtures">Fixtures / Próximas Fechas</h2>
         <div class="FixturesContenido">
@@ -269,7 +270,7 @@ No queremos dejar de agradecer a:
             <!--Decoraciones al costado del directo-->
         </div>
         <div style="align-items: center; width:60%"> <!--Seccion del medio-->
-            <h2 style="margin-top: 120px; margin-bottom: 15px;">Partidos en directo</h2>
+            <h2 style="margin-top:15%; margin-bottom: 15px;">Partidos en directo</h2>
             <div class="PartidosEnDirecto">
                 <iframe class="PartidosEnDirecto"
                     src="https://www.youtube.com/embed/live_stream?channel=UCnHtmGdBMxjc6Oj2VXI-3Vw&autoplay=1&mute=1" 
