@@ -186,7 +186,6 @@ h2{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
 }
 .BotonPlanteles {
     color: black;
@@ -194,7 +193,7 @@ h2{
     border-radius: 15px;
     cursor: pointer;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: medium;
+    font-size: clamp(4px,2vw,18px);
     font-weight: bold;
     border-radius: 25px;
     transition: background-color 0.3s;
@@ -216,7 +215,7 @@ h2{
     display: flex;
     margin-top: 0px;
     background-color: #E8E8E8;
-    height: 80%;                             /*PROBLEMA ACA!!!, SECCIONDE BOTONES PLANTELES Y EL H3 EMPUJAN PLANTELESCONTENIDO*/
+    height: 80%;                            
     width: 80%;
     margin-left: 0;
     margin-right: 0;
@@ -274,7 +273,7 @@ h2{
     color: white;
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: clamp(2px,3vw,15px);
+    font-size: clamp(2px,1.5vw,15px);
 }
 .PlantelesLista ul {
     width: 100%;
@@ -283,7 +282,7 @@ h2{
     padding: 0;
     box-sizing: border-box;
     overflow-y: auto;  /* si la lista es muy larga, aparece scroll */
-    font-size: clamp(2px,3vw,10px);
+    font-size: clamp(2px,1.5vw,15px);
 }
 .PlantelesLista ul li{
     margin-top:5px;
@@ -356,7 +355,6 @@ h2{
 
 
 .SeccionVideoDirecto{
-
 width:100%;
 height:100%;
 background-color: transparent;
@@ -365,14 +363,14 @@ flex-direction: row;
 justify-content: space-between;
 gap:0;
 }
-
-
 .PartidosEnDirecto {
     width: 80%;
-    height: 70%;
+    aspect-ratio: 9/6;
     margin: 20px auto;
     text-align: center;
 }
+
+
 
 .modal {
     display: none; 
