@@ -346,11 +346,14 @@ h2{
 }
 .Partido span{ 
     font-size: auto;
-
 }
 .PartidoPlantel {
     font-weight: bold;
     color: black;
+}
+.AnuncioFixture{
+    text-align:center;
+    margin-top: 1vh;
 }
 
 
